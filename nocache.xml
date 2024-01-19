@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="Content">
+	<name>No Cache</name>
+	<author>Sebastien LHUILLIER</author>
+	<creationDate>Octobre 2023</creationDate>
+	<copyright>Sébastien LHUILLIER</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sebastien.lhuillier+joomla@gmail.com</authorEmail>
+	<authorUrl>www.sebastien-lhuillier.com</authorUrl>
+	<version>1.0</version>
+	<description>Ce plugin desactive le cache navigateur</description>
+	<files>
+		<filename plugin="nocache">nocache.php</filename>
+		<filename>nocache.xml</filename>
+		<filename>style.css</filename>
+	</files>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="noncache" type="radio" default="0" label="Méta tags No-cache" description="">
+				<option value="0">Désactivé</option>
+				<option value="1">Activé</option>
+			</field>
+		</fieldset>	
+	</fields>
+	</config>	
+</extension>
